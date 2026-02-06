@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Layout, Smartphone, Gauge, Search, ShoppingBag, ArrowUpRight } from "lucide-react";
+import { Layout, Smartphone, Gauge, Search, ShoppingBag, ArrowUpRight, Rocket } from "lucide-react";
 import Link from "next/link";
 
 const services = [
@@ -12,6 +12,14 @@ const services = [
         color: "text-blue-400",
         gradient: "from-blue-500/20 to-transparent",
         border: "group-hover:border-blue-500/50"
+    },
+    {
+        icon: <Rocket className="w-8 h-8" />,
+        title: "High-Converting Landing Pages",
+        description: "Sales-focused pages designed with psychology and precision to maximize ROI and capture leads.",
+        color: "text-red-400",
+        gradient: "from-red-500/20 to-transparent",
+        border: "group-hover:border-red-500/50"
     },
     {
         icon: <ShoppingBag className="w-8 h-8" />,
