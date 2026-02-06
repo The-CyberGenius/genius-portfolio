@@ -26,7 +26,7 @@ export default function Navbar() {
                             <Code2 className="w-6 h-6 text-primary" />
                         </div>
                         <span className="font-bold text-xl tracking-tight text-white">
-                            Genius<span className="text-primary">Dev</span>
+                            Shiva
                         </span>
                     </Link>
 

@@ -16,7 +16,7 @@ export default function Footer() {
                             <Code2 className="w-6 h-6 text-primary" />
                         </div>
                         <span className="font-bold text-xl tracking-tight text-white">
-                            Genius<span className="text-primary">Dev</span>
+                            Shiva
                         </span>
                     </Link>
 
@@ -30,7 +30,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                    <p>&copy; {currentYear} GeniusDev. All rights reserved.</p>
+                    <p>&copy; {currentYear} Shiva. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
                         <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
