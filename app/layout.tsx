@@ -10,17 +10,17 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Shiva | Premium Web Developer",
+  title: "GeniusDev | Premium Web Developer",
   description: "High-performance websites & web apps by Shiva.",
   openGraph: {
-    title: "Shiva | Premium Web Developer",
+    title: "GeniusDev | Premium Web Developer",
     description: "Turning Ideas Into Digital Reality. High-performance websites & web apps.",
     type: "website",
     locale: "en_US",
-    url: "https://shiva.dev",
+    url: "https://geniusdevelopers.space",
   },
   appleWebApp: {
-    title: "Shiva.dev",
+    title: "GeniusDev",
     statusBarStyle: "black-translucent",
   },
   icons: {

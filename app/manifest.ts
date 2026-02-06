@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: 'Shiva | Premium Web Developer',
-        short_name: 'Shiva.dev',
+        name: 'GeniusDev | Premium Web Developer',
+        short_name: 'GeniusDev',
         description: 'High-performance websites & web apps by Shiva.',
         start_url: '/',
         display: 'standalone',
