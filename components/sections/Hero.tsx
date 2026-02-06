@@ -328,10 +328,7 @@ function Typewriter({
             ? fullText.substring(0, text.length - 1)
             : fullText.substring(0, text.length + 1);
 
-        // Sound effect only when typing characters (not just waiting)
-        if (!isDeleting && updatedText !== text) {
-            playClickSound();
-        }
+
 
         setText(updatedText);
 
