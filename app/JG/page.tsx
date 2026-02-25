@@ -160,6 +160,18 @@ export default function JGPage() {
                                     </motion.li>
                                 ))}
                             </ul>
+
+                            <div className="mt-8 pt-6 border-t border-slate-100">
+                                <a
+                                    href={getWhatsAppLink(service.waMsg)}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20b858] text-white py-3 px-6 rounded-xl font-bold transition-all hover:scale-[1.02] shadow-sm shadow-[#25D366]/20"
+                                >
+                                    <MessageCircle className="w-5 h-5 fill-white" />
+                                    WhatsApp पर पूछें (Enquire Now)
+                                </a>
+                            </div>
                         </motion.div>
                     ))}
                 </div>
