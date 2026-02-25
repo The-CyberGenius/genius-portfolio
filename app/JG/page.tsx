@@ -10,7 +10,8 @@ import {
     GraduationCap,
     Megaphone,
     CheckCircle2,
-    ChevronRight
+    ChevronRight,
+    MessageCircle
 } from "lucide-react";
 
 const services = [
@@ -26,7 +27,8 @@ const services = [
             { en: "Custom Web Applications", hi: "आपके बिज़नेस के हिसाब से कस्टम वेब ऐप्स" },
             { en: "All Kinds of Web Apps", hi: "हर तरह के स्केलेबल वेब ऐप्स" },
         ],
-        accent: "bg-blue-50 border-blue-100"
+        accent: "bg-blue-50 border-blue-100",
+        waMsg: "नमस्ते, मुझे 'Web Development (वेबसाइट डेवलपमेंट)' सर्विस के बारे में और जानकारी चाहिए।"
     },
     {
         title: "Technical Infrastructure",
@@ -39,7 +41,8 @@ const services = [
             { en: "Website Security", hi: "हैकर्स से वेबसाइट की सुरक्षा" },
             { en: "Performance Optimization", hi: "सुपरफ़ास्ट लोडिंग स्पीड" },
         ],
-        accent: "bg-emerald-50 border-emerald-100"
+        accent: "bg-emerald-50 border-emerald-100",
+        waMsg: "नमस्ते, मुझे 'Technical Infrastructure (तकनीकी सेटअप)' सर्विस के बारे में और जानकारी चाहिए।"
     },
     {
         title: "Digital Management",
@@ -51,7 +54,8 @@ const services = [
             { en: "Technical Troubleshooting", hi: "किसी भी तकनीकी समस्या का तुरंत समाधान" },
             { en: "Ongoing Maintenance", hi: "आपको लगातार मिलेगा हमारा सपोर्ट" },
         ],
-        accent: "bg-purple-50 border-purple-100"
+        accent: "bg-purple-50 border-purple-100",
+        waMsg: "नमस्ते, मुझे 'Digital Management (डिजिटल मैनेजमेंट)' सर्विस के बारे में और जानकारी चाहिए।"
     },
     {
         title: "Advanced Solutions",
@@ -63,7 +67,8 @@ const services = [
             { en: "Crypto & Web3", hi: "Crypto और Web3 के लिए सही टेक्निकल सलाह" },
             { en: "Automation Systems", hi: "आपका काम आसान करने के लिए ऑटोमैटिक सिस्टम" },
         ],
-        accent: "bg-amber-50 border-amber-100"
+        accent: "bg-amber-50 border-amber-100",
+        waMsg: "नमस्ते, मुझे 'Advanced Solutions (एडवांस्ड डिजिटल सर्विस)' सर्विस के बारे में और जानकारी चाहिए।"
     }
 ];
 
@@ -74,6 +79,14 @@ const highlights = [
 ];
 
 export default function JGPage() {
+
+    const handleWhatsApp = (message: string) => {
+        // URL encode the message so it's safely formatted for the WhatsApp API
+        const text = encodeURIComponent(message);
+        const phoneNumber = "919828116211"; // Added country code 91
+        window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
+    };
+
     return (
         <div className="min-h-screen bg-slate-50 text-slate-800 selection:bg-blue-100 font-sans overflow-hidden">
             {/* Background Glows (Light Mode version) */}
