@@ -130,9 +130,9 @@ export default function JGPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ delay: idx * 0.15, duration: 0.6 }}
-                            className={`bg-white border rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group border-slate-200`}
+                            className={`flex flex-col h-full bg-white border rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group border-slate-200`}
                         >
-                            <div className="flex items-center gap-4 mb-8 border-b border-slate-100 pb-6">
+                            <div className="flex items-center gap-4 mb-8 border-b border-slate-100 pb-6 shrink-0">
                                 <div className={`p-4 rounded-xl group-hover:scale-110 transition-transform duration-300 ${service.accent}`}>
                                     {service.icon}
                                 </div>
@@ -142,7 +142,7 @@ export default function JGPage() {
                                 </div>
                             </div>
 
-                            <ul className="space-y-4">
+                            <ul className="space-y-4 grow">
                                 {service.items.map((item, idy) => (
                                     <motion.li
                                         key={idy}
